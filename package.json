@@ -1,0 +1,16 @@
+{
+  "name": "promise-example",
+  "version": "1.0.0",
+  "description": "a project which demostrates various promise usage patterns",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rgee",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "chai-as-promised": "^5.1.0",
+    "mocha": "^2.2.5"
+  }
+}
