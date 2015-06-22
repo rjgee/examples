@@ -1,4 +1,4 @@
-var Promise = require('bluebird');
+var Promise = require('q');
 var _innerError = new Error('error');
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
 		return new Promise(function (resolve1, reject1) {
 	  		return new Promise(function (resolve2, reject2) {
 	    		return new Promise(function (resolve3, reject3) {
-	      			return undefined('error');
+					var crash = undefined() + 1;
 	    		}).catch(reject2);
 	  		}).catch(reject1);
 		});
@@ -19,7 +19,7 @@ module.exports = {
 		return new Promise(function (resolve1, reject1) {
 	  		return new Promise(function (resolve2, reject2) {
 	    		return new Promise(function (resolve3, reject3) {
-	      			return undefined('error');
+					var crash = undefined() + 1;
 	    		});
 	  		});
 		});
