@@ -9,7 +9,7 @@ module.exports = {
 		return new Promise(function (resolve1, reject1) {
 	  		return new Promise(function (resolve2, reject2) {
 	    		return new Promise(function (resolve3, reject3) {
-	      			throw _innerError;
+	      			return undefined('error');
 	    		}).catch(reject2);
 	  		}).catch(reject1);
 		});
@@ -19,7 +19,7 @@ module.exports = {
 		return new Promise(function (resolve1, reject1) {
 	  		return new Promise(function (resolve2, reject2) {
 	    		return new Promise(function (resolve3, reject3) {
-	      			throw _innerError;
+	      			return undefined('error');
 	    		});
 	  		});
 		});
